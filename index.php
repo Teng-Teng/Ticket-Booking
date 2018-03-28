@@ -111,16 +111,16 @@
               <input type="radio" name="options" id="option3" autocomplete="off"> Multi-City
             </label>
           </div>
-          
+
           <form id="J_Search" target="_blank">
             <div class="row">
               <div class="col">
-                <label for="inputFirst">From</label>
-                <input type="text" class="form-control" id="inputFirst" placeholder="First name">
+                <label for="from">From</label>
+                <input type="text" class="form-control" id="from" placeholder="City of airport">
               </div>
               <div class="col">
-                <label for="inputLast">To</label>
-                <input type="text" class="form-control" id="inputLast" placeholder="Last name">
+                <label for="to">To</label>
+                <input type="text" class="form-control" id="to" placeholder="City or airport">
               </div>
             </div>
 
@@ -130,26 +130,24 @@
             <label class="" for="J_EndDate">Return</label>
             <input id="J_EndDate" type="text" class="" value="" />
         
-            <label class="" for="input_adult">Adult(12+ yrs)</label>
-            <input id="input_adult" type="number" name="" min="0" max="10">
+            <label class="" for="adult">Adult(12+ yrs)</label>
+            <input id="adult" type="number" name="" min="0" max="10">
 
-            <label class="" for="input_child">Child(2-12 yrs)</label>
-            <input id="input_child" type="number" name="" min="0" max="10">
-
-            <label class="" for="input_infant">Infant(0-2 yrs)</label>
-            <input id="input_infant" type="number" name="" min="0" max="10">
+            <label class="" for="child">Child(2-12 yrs)</label>
+            <input id="child" type="number" name="" min="0" max="10">
             
-            <label class="" for="select_class">Infant(0-2 yrs)</label>
+            <label class="" for="select_class">Class</label>
             <select id="select_class" class="custom-select">
-              <option selected>Economy</option>
-              <option value="1">Business</option>
-              <option value="2">First Class</option>
+              <option value="Economy" selected>Economy</option>
+              <option value="Business">Business</option>
+              <option value="First Class">First Class</option>
             </select>
 
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">Nonstop only</label>
+              <input type="checkbox" class="custom-control-input" id="customCheck">
+              <label class="custom-control-label" for="customCheck">Nonstop only</label>
             </div>
+
             <input id="J_search_btn" type="submit" class="" value="Search flights" />
 
           </form>
@@ -157,7 +155,28 @@
         </div>
 
         <div class="table flex-item">
-          
+          <?php 
+            require_once('database.php');
+
+            $db = new Database();
+            $all_tickets = $db->getAllTickets();
+
+          ?>
+
+          <ul>
+            <?php 
+              foreach($all_tickets as $ticket) {
+                echo '<li id="'. $ticket['id']. '">Name: ' . $ticket['Origin'];
+                echo '<br>';
+                echo 'Price: ' . $ticket['DepartDate'];
+                echo '<br>';
+                echo '<button onclick="deleteTicket(\'' . $ticket['id'] . '\')">Delete</button>';
+                echo '</li>';
+              }
+
+            ?>
+          </ul>
+          <div class="info"></div>
         </div>
       </div>   
     </main>
@@ -229,7 +248,7 @@
                       this.set('message', aMessage[iError]).showMessage();                
                   }
                   else {
-                      alert('开始时间：' + sDepDate + '\n返程时间：' + sEndDate);
+                      // alert('开始时间：' + sDepDate + '\n返程时间：' + sEndDate);
                   }
           }, oCal);
       });
@@ -238,11 +257,57 @@
     <script>
     
     $(document).ready(function(){
-        $('#J_search_btn').click(function(){
-            // console.log($('#J_DepDate').val());
-        });
+      $('#J_search_btn').click(function(){
+        var from = $('#from').val();
+        var to = $('#to').val();
+        var departDate = $('#J_DepDate').val();
+        var returnDate = $('#J_EndDate').val();
+        var adult = $('#adult').val();
+        var child = $('#child').val();
+        var flightClass = $('#select_class').val();
+
+        $.post(
+          "http://192.168.33.10/Ticket Booking/insert.php",
+          {
+            "insert_from": from,
+            "insert_to": to,
+            "insert_departDate": departDate,
+            "insert_returnDate": returnDate,
+            "insert_adult": adult,
+            "insert_child": child,
+            "insert_flightClass": flightClass
+          },
+          function(data) {
+            if(data.message == 'Insert successfully') {
+              // console.log(data.message);
+              $('.info').html(data.message);
+            } else {
+
+            }
+          },
+          "json"
+        );        
+
+
+      });
     });
 
+
+    function deleteTicket(id) {
+        //ajax to connect backend
+        $.post(
+          "http://192.168.33.10/Ticket Booking/delete.php",
+          {
+            "delete_id": id
+          },
+          function(data) {
+            // console.log(data.message);
+            $('.info').html(data.message);
+            $('#' + id).hide();
+          },
+          "json"
+        );
+      }
     </script>
   </body>
 </html>
