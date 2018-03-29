@@ -85,8 +85,8 @@
     </header>
     
     <main role="main">
-      <div class="bg flex-container">
-        <div class="main-search flex-item">
+      <div class="background-image">
+        <div class="main-search">
           <div class="btn-group btn-group-lg btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-primary active">
               <input type="radio" name="options" id="option1" autocomplete="off" checked> Flights
@@ -154,7 +154,7 @@
           
         </div>
 
-        <div class="table flex-item">
+        <div class="table-ticket">
           <?php 
             require_once('database.php');
 
@@ -181,7 +181,7 @@
               <?php 
                 foreach($all_tickets as $key => $ticket) {
                   echo '<tr id="' . $ticket['id'] .'">';
-                  echo '<th scope="row">' . ++$key .'</th>';
+                  echo '<th scope="row">' . $ticket['id'] .'</th>';
                   echo  '<td>' . $ticket['Origin'] . '</td>';
                   echo  '<td>' . $ticket['Destination'] . '</td>';
                   echo  '<td>' . $ticket['DepartDate'] . '</td>';
@@ -276,60 +276,56 @@
     </script>
 
     <script>
-    
-    $(document).ready(function(){
-      $('#J_search_btn').click(function(){
-        var from = $('#from').val();
-        var to = $('#to').val();
-        var departDate = $('#J_DepDate').val();
-        var returnDate = $('#J_EndDate').val();
-        var adult = $('#adult').val();
-        var child = $('#child').val();
-        var flightClass = $('#select_class').val();
+      
+      $(document).ready(function(){
+        $('#J_search_btn').click(function(){
+          var from = $('#from').val();
+          var to = $('#to').val();
+          var departDate = $('#J_DepDate').val();
+          var returnDate = $('#J_EndDate').val();
+          var adult = $('#adult').val();
+          var child = $('#child').val();
+          var flightClass = $('#select_class').val();
 
-        $.post(
-          "http://192.168.33.10/Ticket Booking/insert.php",
-          {
-            "insert_from": from,
-            "insert_to": to,
-            "insert_departDate": departDate,
-            "insert_returnDate": returnDate,
-            "insert_adult": adult,
-            "insert_child": child,
-            "insert_flightClass": flightClass
-          },
-          function(data) {
-            if(data.message == 'Insert successfully') {
+          $.post(
+            "http://192.168.33.10/Ticket Booking/insert.php",
+            {
+              "insert_from": from,
+              "insert_to": to,
+              "insert_departDate": departDate,
+              "insert_returnDate": returnDate,
+              "insert_adult": adult,
+              "insert_child": child,
+              "insert_flightClass": flightClass
+            },
+            function(data) {
+              if(data.message == 'Insert successfully') {
 
-              var id = $('tbody').children("tr:last-child").attr('id');
-              id++;
-              var insert = '<tr id="' + id + '">'+
-                    '<th scope="row">' + data.length + '</th>' +
-                    '<td>' + from + '</td>' +
-                    '<td>' + to + '</td>' +
-                    '<td>' + departDate + '</td>' +
-                    '<td>' + returnDate + '</td>' +
-                    '<td>' + adult + '</td>' +
-                    '<td>' + child + '</td>' +
-                    '<td>' + flightClass + '</td>' +
-                    '<td>' + '<button onclick="deleteTicket(\'' + id + '\')">Delete</button>' + '</td>' +
-                    '</tr>';
-              $('tbody').append(insert);
+                var id = $('tbody').children("tr:last-child").attr('id');
+                id++;
+                var insert = '<tr id="' + id + '">'+
+                      '<th scope="row">' + id + '</th>' +
+                      '<td>' + from + '</td>' +
+                      '<td>' + to + '</td>' +
+                      '<td>' + departDate + '</td>' +
+                      '<td>' + returnDate + '</td>' +
+                      '<td>' + adult + '</td>' +
+                      '<td>' + child + '</td>' +
+                      '<td>' + flightClass + '</td>' +
+                      '<td>' + '<button onclick="deleteTicket(\'' + id + '\')">Delete</button>' + '</td>' +
+                      '</tr>';
+                $('tbody').append(insert);
+                
+                $('.info').html(data.message);
+              } else {
+                $('.info').html(data.message);
+              }
+            },
+            "json"
+          ); 
 
-
-              console.log('id: ' + id);
-              console.log('message: '+data.message);
-              console.log('length: '+data.length);
-              $('.info').html(data.message);
-            } else {
-              $('.info').html(data.message);
-            }
-          },
-          "json"
-        ); 
-
+        });
       });
-    });
 
 
       function deleteTicket(id) {

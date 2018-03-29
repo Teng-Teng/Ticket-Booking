@@ -8,8 +8,7 @@ body {
 nav {
 	border-bottom: 2px solid #1171B7;
 }
-.bg {
-	height: 70vh;
+.background-image {
 	background-image: url('./images/bg.jpg');
 	background-size: cover;
 	background-position: top left;
@@ -17,24 +16,16 @@ nav {
 }
 .main-search {
 	width: 55vw;
-	height: 85%;
+	height: 30%;
 	margin-top: 2rem;
 	margin-left: 3rem;
 }
-.table {
-	width: 35vw;
-	height: 85%;
+.table-ticket {
+	width: 100vw;
+	height: 30%;
 	margin-top: 2rem;
+	margin-left: 3rem;
 }
-.flex-container {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-around;
-    justify-content: space-around; 
-}
-.flex-item {
-    background-color: rgba(0, 41, 64, 0.75);
-}
-div.table {
-	color: #000;
+.main-search, .table-ticket {
+	background-color: rgba(0, 41, 64, 0.75);
 }

@@ -70,33 +70,33 @@ class Database {
 		return $affected_rows;
 	}
 
-	public function calculateId($origin, $destination, $departDate, $returnDate, 
-		$adult, $child, $flightClass) {
+	// public function calculateId($origin, $destination, $departDate, $returnDate, 
+	// 	$adult, $child, $flightClass) {
 		
-		$this->getInstanceConnection();
+	// 	$this->getInstanceConnection();
 
-		$sql = "SELECT id FROM tickets where Origin = :origin and 
-		Destination = :destination and DepartDate = : departDate and 
-		ReturnDate = :returnDate and Adult = :adult and Child = :child and 
-		Class = :class ";
+	// 	$sql = "SELECT id FROM tickets where Origin = :origin and 
+	// 	Destination = :destination and DepartDate = : departDate and 
+	// 	ReturnDate = :returnDate and Adult = :adult and Child = :child and 
+	// 	Class = :class ";
 
-		$stmt = $this->connection->prepare($sql);
-		$stmt->execute(
-			array(
-				':origin' => $origin,
-				':destination' => $destination,
-				':depart' => $departDate,
-				':return' => $returnDate,
-				':adult' => $adult,
-				':child' => $child,
-				':class' => $flightClass
-			)
-		);
+	// 	$stmt = $this->connection->prepare($sql);
+	// 	$stmt->execute(
+	// 		array(
+	// 			':origin' => $origin,
+	// 			':destination' => $destination,
+	// 			':depart' => $departDate,
+	// 			':return' => $returnDate,
+	// 			':adult' => $adult,
+	// 			':child' => $child,
+	// 			':class' => $flightClass
+	// 		)
+	// 	);
 
-		$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	// 	$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-		return $result;
-	}
+	// 	return $result;
+	// }
 
 }
 
