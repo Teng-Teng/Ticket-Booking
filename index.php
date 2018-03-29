@@ -166,7 +166,7 @@
           <table class="table table-striped table-hover">
             <thead>
               <tr>
-                <th scope="col">#</th>
+                <th scope="col">Flight</th>
                 <th scope="col">From</th>
                 <th scope="col">To</th>
                 <th scope="col">Depart</th>
@@ -299,20 +299,25 @@
             "insert_flightClass": flightClass
           },
           function(data) {
-            // console.log(data.id);
             if(data.message == 'Insert successfully') {
-              // var insert = '<tr id="' + data.id + '">'+
-              //       '<th scope="row">' + data.length + '</th>' +
-              //       '<td>' + from + '</td>' +
-              //       '<td>' + to + '</td>' +
-              //       '<td>' + departDate + '</td>' +
-              //       '<td>' + returnDate + '</td>' +
-              //       '<td>' + adult + '</td>' +
-              //       '<td>' + child + '</td>' +
-              //       '<td>' + flightClass + '</td>' +
-              //       '<td>' + '<button onclick="deleteTicket(\'' + data.id + '\')">Delete</button>' + '</td>' +
-              //       '</tr>';
-              // $('tbody').append(insert);
+
+              var id = $('tbody').children("tr:last-child").attr('id');
+              id++;
+              var insert = '<tr id="' + id + '">'+
+                    '<th scope="row">' + data.length + '</th>' +
+                    '<td>' + from + '</td>' +
+                    '<td>' + to + '</td>' +
+                    '<td>' + departDate + '</td>' +
+                    '<td>' + returnDate + '</td>' +
+                    '<td>' + adult + '</td>' +
+                    '<td>' + child + '</td>' +
+                    '<td>' + flightClass + '</td>' +
+                    '<td>' + '<button onclick="deleteTicket(\'' + id + '\')">Delete</button>' + '</td>' +
+                    '</tr>';
+              $('tbody').append(insert);
+
+
+              console.log('id: ' + id);
               console.log('message: '+data.message);
               console.log('length: '+data.length);
               $('.info').html(data.message);
