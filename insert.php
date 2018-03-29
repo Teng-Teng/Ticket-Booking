@@ -14,6 +14,10 @@ $db = new Database();
 $affected_rows = $db->insertTicket($origin, $destination, $departDate, $returnDate, 
 	$adult, $child, $flightClass);
 
+// $arr = $db->calculateId($origin, $destination, $departDate, $returnDate, 
+// 	$adult, $child, $flightClass);
+// $id = $arr[0]['id'];
+
 
 if($affected_rows == 0) {
 	$str = 'Insert failed';
@@ -24,8 +28,12 @@ if($affected_rows == 0) {
 header("Access-Control-Allow-Origin: *");
 header("Content-Types: application/json; charset=UTF-8");
 
+$all_tickets = $db->getAllTickets();
+$length = count($all_tickets);
+
 $result = array(
-	'message' => $str
+	'message' => $str,
+	'length' => $length,
 );
 
 echo json_encode($result);

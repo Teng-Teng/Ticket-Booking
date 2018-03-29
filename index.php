@@ -162,20 +162,41 @@
             $all_tickets = $db->getAllTickets();
 
           ?>
+          
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">From</th>
+                <th scope="col">To</th>
+                <th scope="col">Depart</th>
+                <th scope="col">Return</th>
+                <th scope="col">Adult</th>
+                <th scope="col">Child</th>
+                <th scope="col">Class</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php 
+                foreach($all_tickets as $key => $ticket) {
+                  echo '<tr id="' . $ticket['id'] .'">';
+                  echo '<th scope="row">' . ++$key .'</th>';
+                  echo  '<td>' . $ticket['Origin'] . '</td>';
+                  echo  '<td>' . $ticket['Destination'] . '</td>';
+                  echo  '<td>' . $ticket['DepartDate'] . '</td>';
+                  echo  '<td>' . $ticket['ReturnDate'] . '</td>';
+                  echo  '<td>' . $ticket['Adult'] . '</td>';
+                  echo  '<td>' . $ticket['Child'] . '</td>';
+                  echo  '<td>' . $ticket['Class'] . '</td>';
+                  echo  '<td>' . '<button onclick="deleteTicket(\'' . $ticket['id'] . '\')">Delete</button>' . '</td>';
+                  echo '</tr>';
+                }             
 
-          <ul>
-            <?php 
-              foreach($all_tickets as $ticket) {
-                echo '<li id="'. $ticket['id']. '">Name: ' . $ticket['Origin'];
-                echo '<br>';
-                echo 'Price: ' . $ticket['DepartDate'];
-                echo '<br>';
-                echo '<button onclick="deleteTicket(\'' . $ticket['id'] . '\')">Delete</button>';
-                echo '</li>';
-              }
+              ?>
+            </tbody>
+          </table>
 
-            ?>
-          </ul>
           <div class="info"></div>
         </div>
       </div>   
@@ -278,22 +299,35 @@
             "insert_flightClass": flightClass
           },
           function(data) {
+            // console.log(data.id);
             if(data.message == 'Insert successfully') {
-              // console.log(data.message);
+              // var insert = '<tr id="' + data.id + '">'+
+              //       '<th scope="row">' + data.length + '</th>' +
+              //       '<td>' + from + '</td>' +
+              //       '<td>' + to + '</td>' +
+              //       '<td>' + departDate + '</td>' +
+              //       '<td>' + returnDate + '</td>' +
+              //       '<td>' + adult + '</td>' +
+              //       '<td>' + child + '</td>' +
+              //       '<td>' + flightClass + '</td>' +
+              //       '<td>' + '<button onclick="deleteTicket(\'' + data.id + '\')">Delete</button>' + '</td>' +
+              //       '</tr>';
+              // $('tbody').append(insert);
+              console.log('message: '+data.message);
+              console.log('length: '+data.length);
               $('.info').html(data.message);
             } else {
-
+              $('.info').html(data.message);
             }
           },
           "json"
-        );        
-
+        ); 
 
       });
     });
 
 
-    function deleteTicket(id) {
+      function deleteTicket(id) {
         //ajax to connect backend
         $.post(
           "http://192.168.33.10/Ticket Booking/delete.php",

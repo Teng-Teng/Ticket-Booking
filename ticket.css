@@ -35,3 +35,6 @@ nav {
 .flex-item {
     background-color: rgba(0, 41, 64, 0.75);
 }
+div.table {
+	color: #000;
+}

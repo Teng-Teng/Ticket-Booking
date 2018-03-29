@@ -29,6 +29,7 @@ class Database {
 
 	public function insertTicket($origin, $destination, $departDate, $returnDate, 
 		$adult, $child, $flightClass) {
+		
 		$this->getInstanceConnection();
 		$sql = "INSERT INTO tickets(Origin, Destination, DepartDate, ReturnDate, Adult, Child, Class) VALUES (:Origin, :Destination, :Depart, :Return, :Adult, :Child, :Class)";
 
@@ -67,6 +68,34 @@ class Database {
 		$affected_rows = $stmt->rowCount();	
 
 		return $affected_rows;
+	}
+
+	public function calculateId($origin, $destination, $departDate, $returnDate, 
+		$adult, $child, $flightClass) {
+		
+		$this->getInstanceConnection();
+
+		$sql = "SELECT id FROM tickets where Origin = :origin and 
+		Destination = :destination and DepartDate = : departDate and 
+		ReturnDate = :returnDate and Adult = :adult and Child = :child and 
+		Class = :class ";
+
+		$stmt = $this->connection->prepare($sql);
+		$stmt->execute(
+			array(
+				':origin' => $origin,
+				':destination' => $destination,
+				':depart' => $departDate,
+				':return' => $returnDate,
+				':adult' => $adult,
+				':child' => $child,
+				':class' => $flightClass
+			)
+		);
+
+		$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+		return $result;
 	}
 
 }
