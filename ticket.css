@@ -21,10 +21,9 @@ nav {
 	margin-left: 3rem;
 }
 .table-ticket {
-	width: 100vw;
+	width: 91vw;
 	height: 30%;
-	margin-top: 2rem;
-	margin-left: 3rem;
+	margin: 2rem 3rem;
 }
 .main-search, .table-ticket {
 	background-color: rgba(0, 41, 64, 0.75);

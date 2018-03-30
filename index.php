@@ -199,7 +199,11 @@
 
           <div class="info"></div>
         </div>
-      </div>   
+      </div> 
+
+      <div class="banner">
+        <img class="img-fluid" src="./images/banner.png" alt="banner">
+      </div>  
     </main>
           
 
