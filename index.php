@@ -206,6 +206,10 @@
       </div>  
       
       <div class="container">
+        <h3 class="top-deal my-4">
+          Today's Top Deals
+        </h3>
+      
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -422,6 +426,40 @@
           </a>
         </div>
       </div>
+
+        <div class="container-fluid">
+          <div class="subscribe ml-4">
+            <div class="row">
+              <div class="col-2">
+                Get great deals delivered to your inbox！ 
+              </div>
+
+              <div class="col-4">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-2">
+                Save up to <b>50%</b> with mobile-exclusive deals!
+              </div>
+
+              <div class="col">
+                <img src="./images/appStore.png" alt="AppStore">
+                <img src="./images/googlePlay.png" alt="GooglePlay">
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+        
+
+      <br><br><br><br><br><br><br><br> 
 
     </main>
           

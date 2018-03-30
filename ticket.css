@@ -43,3 +43,17 @@ a.link {
 	font-family: 'Kaushan Script', cursive;
 	font-size: 1.1rem;
 }
+.top-deal {
+	font-size: 2.3rem;
+	color: #4eb8c9; 
+	text-align: center;
+	text-shadow: 4px 4px #eee;
+	font-family: 'Kaushan Script', cursive;
+}
+.subscribe {
+	height: 5rem;
+	background-color: #F0F8FF;
+}
+/*.subscribe .row {
+	margin:auto;
+}*/
