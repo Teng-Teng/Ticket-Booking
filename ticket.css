@@ -2,14 +2,14 @@
 	margin: 0;
 	padding: 0;
 }
-body {
+/*body {
 	color: #fff;
-}
+}*/
 nav {
 	border-bottom: 2px solid #1171B7;
 }
 .background-image {
-	background-image: url('./images/bg.jpg');
+	background-image: url('./images/background.jpg');
 	background-size: cover;
 	background-position: top left;
 	border: 0.1px solid #fff;
@@ -27,4 +27,19 @@ nav {
 }
 .main-search, .table-ticket {
 	background-color: rgba(0, 41, 64, 0.75);
+	color: #fff;
+}
+h5.card-title {
+	text-shadow: 4px 4px #eee;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+p.card-text {
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.3rem;
+}
+a.link {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 1.1rem;
 }

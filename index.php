@@ -204,6 +204,225 @@
       <div class="banner">
         <img class="img-fluid" src="./images/banner.png" alt="banner">
       </div>  
+      
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                      <img class="card-img-top images" src="./images/pink.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">PARIS</h5>
+                      <p class="card-text">
+                        Paris – the city of love and romance is undoubtedly one of the most beautiful cities in the world. The most famous features, glorified this beautiful city – Eiffel Tower and French cheese. Paris is the capital of France, it was and still is the center of all the important political events in the country, beginning with the French Revolution. France is famous mainly because of this amazing beautiful city. Gorgeous perfume and gourmet cuisine has its origins precisely in Paris. Paris should be a very interesting motto – «Fluctuat nec mergitur», which literally means “to swim, but did not sink.”
+                      </p>
+                      <div class="text-center">
+                        <a href="#" class="btn btn-primary link">VISIT PARIS</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                 <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top images" src="./images/sakura.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">VENICE</h5>
+                        <p class="card-text">
+                          Venice is located in the north-eastern part of Italy, and is perhaps the most beautiful city in the world in 2014 year! This city is as beautiful as unique. The other, a little bit similar, there is no country in the world. He won a huge honor to be a World Heritage Site. Speaking of Venice, often uttered the phrase – “City of Water”, “City of Masks”, “City of Bridges” and “City Channel” and many others. According to the magazine “Times Magazine”, Venice is considered one of the most romantic cities in Europe. Venice has a rich architectural heritage. Most often there is a Gothic style.
+                        </p>
+                        <div class="text-center">
+                          <a href="#" class="btn btn-primary link">VISIT VENICE</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top images" src="./images/hotel.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">PRAGUE</h5>
+                      <p class="card-text">
+                        Prague is not only the largest city in the Czech Republic, but also its capital. It is the 14th largest city in the European Union with an excellent architecture of the Renaissance. Renaissance was characterized by the search for new research and discoveries, so Prague is worth a visit because of its tremendous educational institutions. One of the most interesting facts is the age of Prague – 1100 years. Just imagine the impressive historical heritage, which is currently concentrated in this city. For this reason, Prague, on the right, is included in our list of top 10 most beautiful cities in the world.
+                      </p>
+                      <div class="text-center">
+                        <a href="#" class="btn btn-primary link">VISIT PRAGUE</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top images" src="./images/taiwan.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">PARIS</h5>
+                      <p class="card-text">
+                        Paris – the city of love and romance is undoubtedly one of the most beautiful cities in the world. The most famous features, glorified this beautiful city – Eiffel Tower and French cheese. Paris is the capital of France, it was and still is the center of all the important political events in the country, beginning with the French Revolution. France is famous mainly because of this amazing beautiful city. Gorgeous perfume and gourmet cuisine has its origins precisely in Paris. Paris should be a very interesting motto – «Fluctuat nec mergitur», which literally means “to swim, but did not sink.”
+                      </p>
+                      <div class="text-center">
+                        <a href="#" class="btn btn-primary link">VISIT PARIS</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                 <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top images" src="./images/suzhou.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">VENICE</h5>
+                        <p class="card-text">
+                          Venice is located in the north-eastern part of Italy, and is perhaps the most beautiful city in the world in 2014 year! This city is as beautiful as unique. The other, a little bit similar, there is no country in the world. He won a huge honor to be a World Heritage Site. Speaking of Venice, often uttered the phrase – “City of Water”, “City of Masks”, “City of Bridges” and “City Channel” and many others. According to the magazine “Times Magazine”, Venice is considered one of the most romantic cities in Europe. Venice has a rich architectural heritage. Most often there is a Gothic style.
+                        </p>
+                        <div class="text-center">
+                          <a href="#" class="btn btn-primary link">VISIT VENICE</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top images" src="./images/jiangsu.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">PRAGUE</h5>
+                      <p class="card-text">
+                        Prague is not only the largest city in the Czech Republic, but also its capital. It is the 14th largest city in the European Union with an excellent architecture of the Renaissance. Renaissance was characterized by the search for new research and discoveries, so Prague is worth a visit because of its tremendous educational institutions. One of the most interesting facts is the age of Prague – 1100 years. Just imagine the impressive historical heritage, which is currently concentrated in this city. For this reason, Prague, on the right, is included in our list of top 10 most beautiful cities in the world.
+                      </p>
+                      <div class="text-center">
+                        <a href="#" class="btn btn-primary link">VISIT PRAGUE</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top images" src="./images/greatwall.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">PARIS</h5>
+                      <p class="card-text">
+                        Paris – the city of love and romance is undoubtedly one of the most beautiful cities in the world. The most famous features, glorified this beautiful city – Eiffel Tower and French cheese. Paris is the capital of France, it was and still is the center of all the important political events in the country, beginning with the French Revolution. France is famous mainly because of this amazing beautiful city. Gorgeous perfume and gourmet cuisine has its origins precisely in Paris. Paris should be a very interesting motto – «Fluctuat nec mergitur», which literally means “to swim, but did not sink.”
+                      </p>
+                      <div class="text-center">
+                        <a href="#" class="btn btn-primary link">VISIT PARIS</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                 <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top images" src="./images/shanghai.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">VENICE</h5>
+                        <p class="card-text">
+                          Venice is located in the north-eastern part of Italy, and is perhaps the most beautiful city in the world in 2014 year! This city is as beautiful as unique. The other, a little bit similar, there is no country in the world. He won a huge honor to be a World Heritage Site. Speaking of Venice, often uttered the phrase – “City of Water”, “City of Masks”, “City of Bridges” and “City Channel” and many others. According to the magazine “Times Magazine”, Venice is considered one of the most romantic cities in Europe. Venice has a rich architectural heritage. Most often there is a Gothic style.
+                        </p>
+                        <div class="text-center">
+                          <a href="#" class="btn btn-primary link">VISIT VENICE</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top images" src="./images/delhi.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">PRAGUE</h5>
+                      <p class="card-text">
+                        Prague is not only the largest city in the Czech Republic, but also its capital. It is the 14th largest city in the European Union with an excellent architecture of the Renaissance. Renaissance was characterized by the search for new research and discoveries, so Prague is worth a visit because of its tremendous educational institutions. One of the most interesting facts is the age of Prague – 1100 years. Just imagine the impressive historical heritage, which is currently concentrated in this city. For this reason, Prague, on the right, is included in our list of top 10 most beautiful cities in the world.
+                      </p>
+                      <div class="text-center">
+                        <a href="#" class="btn btn-primary link">VISIT PRAGUE</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top images" src="./images/casablanca.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">PARIS</h5>
+                      <p class="card-text">
+                        Paris – the city of love and romance is undoubtedly one of the most beautiful cities in the world. The most famous features, glorified this beautiful city – Eiffel Tower and French cheese. Paris is the capital of France, it was and still is the center of all the important political events in the country, beginning with the French Revolution. France is famous mainly because of this amazing beautiful city. Gorgeous perfume and gourmet cuisine has its origins precisely in Paris. Paris should be a very interesting motto – «Fluctuat nec mergitur», which literally means “to swim, but did not sink.”
+                      </p>
+                      <div class="text-center">
+                        <a href="#" class="btn btn-primary link">VISIT PARIS</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                 <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top images" src="./images/melbourne.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">VENICE</h5>
+                        <p class="card-text">
+                          Venice is located in the north-eastern part of Italy, and is perhaps the most beautiful city in the world in 2014 year! This city is as beautiful as unique. The other, a little bit similar, there is no country in the world. He won a huge honor to be a World Heritage Site. Speaking of Venice, often uttered the phrase – “City of Water”, “City of Masks”, “City of Bridges” and “City Channel” and many others. According to the magazine “Times Magazine”, Venice is considered one of the most romantic cities in Europe. Venice has a rich architectural heritage. Most often there is a Gothic style.
+                        </p>
+                        <div class="text-center">
+                          <a href="#" class="btn btn-primary link">VISIT VENICE</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top images" src="./images/montego.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">PRAGUE</h5>
+                      <p class="card-text">
+                        Prague is not only the largest city in the Czech Republic, but also its capital. It is the 14th largest city in the European Union with an excellent architecture of the Renaissance. Renaissance was characterized by the search for new research and discoveries, so Prague is worth a visit because of its tremendous educational institutions. One of the most interesting facts is the age of Prague – 1100 years. Just imagine the impressive historical heritage, which is currently concentrated in this city. For this reason, Prague, on the right, is included in our list of top 10 most beautiful cities in the world.
+                      </p>
+                      <div class="text-center">
+                        <a href="#" class="btn btn-primary link">VISIT PRAGUE</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span style="color: red" class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
     </main>
           
 
