@@ -60,3 +60,29 @@ a.link {
 .hotel {
 	text-align: center;
 }
+#new-position {
+	position: relative;
+}
+.badge {
+	position:absolute;
+	top: -1.3rem;
+	left: 3rem;
+}
+.square {
+	font-size: 14px;
+	font-weight: 400;
+	padding: 3px 7px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background-color: #ffb000;
+	color: #fff;
+	
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #ffb000 transparent transparent #ffb000;
+}

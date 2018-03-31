@@ -33,7 +33,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Trains</a>
             </li>
-            <li class="nav-item">
+            <li id="new-position" class="nav-item">
+              <div class="badge">
+                <div class="square">New</div>
+                <div class="triangle"></div>
+              </div>
               <a class="nav-link" href="#">Mobile</a>
             </li>
           </ul>
