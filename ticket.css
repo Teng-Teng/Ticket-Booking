@@ -86,3 +86,29 @@ a.link {
 	border-style: solid;
 	border-color: #ffb000 transparent transparent #ffb000;
 }
+.EN {
+	width: 30px;
+	height: 20px;
+	display: inline-block;
+	background-image: url(./images/global-sprite.png);
+	background-position: 0 -48px;
+	background-size: 240px auto;
+	position: relative;
+	top: 5px;
+}
+#EN {
+	position: relative;
+	top:-1.5px;
+}
+.App {
+	width: 16px;
+	height: 26px;
+	display: inline-block;
+	background-image: url(./images/global-sprite.png);
+	background-position: -168px -120px;
+	background-size: 240px auto;
+}
+span#App {
+	position: relative;
+	top: -7px;
+}

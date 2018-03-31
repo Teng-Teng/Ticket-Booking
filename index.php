@@ -66,8 +66,8 @@
               </div>
             </li> 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                EN
+              <a id="EN" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="EN"></i> EN
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Action</a>
@@ -80,7 +80,9 @@
               <a class="nav-link" href="#">Account</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">App</a>
+              <a class="nav-link" href="#">
+                <i class="App"></i> <span id="App">App</span> 
+              </a>
             </li>
             
           </ul>
