@@ -54,6 +54,9 @@ a.link {
 	height: 5rem;
 	background-color: #F0F8FF;
 }
-/*.subscribe .row {
-	margin:auto;
-}*/
+.card:hover {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.hotel {
+	text-align: center;
+}

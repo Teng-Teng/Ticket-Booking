@@ -427,39 +427,105 @@
         </div>
       </div>
 
-        <div class="container-fluid">
-          <div class="subscribe ml-4">
-            <div class="row">
-              <div class="col-2">
-                Get great deals delivered to your inbox！ 
-              </div>
+      <div class="container-fluid">
+        <div class="subscribe ml-4">
+          <div class="row">
+            <div class="col-2">
+              Get great deals delivered to your inbox！ 
+            </div>
 
-              <div class="col-4">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary" type="button">Subscribe</button>
-                  </div>
+            <div class="col-4">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
                 </div>
               </div>
-              
-              <div class="col-2">
-                Save up to <b>50%</b> with mobile-exclusive deals!
-              </div>
+            </div>
+            
+            <div class="col-2">
+              Save up to <b>50%</b> with mobile-exclusive deals!
+            </div>
 
-              <div class="col">
-                <img src="./images/appStore.png" alt="AppStore">
-                <img src="./images/googlePlay.png" alt="GooglePlay">
-              </div>
-
-
+            <div class="col">
+              <img src="./images/appStore.png" alt="AppStore">
+              <img src="./images/googlePlay.png" alt="GooglePlay">
             </div>
 
           </div>
         </div>
+      </div>
+      
+      <div class="container">
+        <h3 class="top-deal my-4">
+          Recommended Hotels
+        </h3>
         
+        <div class="hotel">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Paris</button>
+            <button type="button" class="btn btn-light">New York</button>
+            <button type="button" class="btn btn-light">Los Angeles</button>
+            <button type="button" class="btn btn-light">London</button>
+            <button type="button" class="btn btn-light">Shanghai</button>
+            <button type="button" class="btn btn-light">Hong Kong</button>
+            <button type="button" class="btn btn-light">Bangkok</button>
+            <button type="button" class="btn btn-light">Seoul</button>
+          </div>
+        </div>
 
-      <br><br><br><br><br><br><br><br> 
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/1.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/2.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/3.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/4.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/5.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/6.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
 
     </main>
           
