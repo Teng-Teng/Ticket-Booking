@@ -86,7 +86,7 @@ a.link {
 	border-style: solid;
 	border-color: #ffb000 transparent transparent #ffb000;
 }
-.EN {
+i.icon-EN {
 	width: 30px;
 	height: 20px;
 	display: inline-block;
@@ -94,13 +94,13 @@ a.link {
 	background-position: 0 -48px;
 	background-size: 240px auto;
 	position: relative;
-	top: 5px;
+	top: 4.5px;
 }
-#EN {
+a#icon-EN {
 	position: relative;
 	top:-1.5px;
 }
-.App {
+i.icon-App {
 	width: 16px;
 	height: 26px;
 	display: inline-block;
@@ -108,7 +108,61 @@ a.link {
 	background-position: -168px -120px;
 	background-size: 240px auto;
 }
-span#App {
+span#icon-App {
 	position: relative;
 	top: -7px;
 }
+i.icon-Flights {
+	width: 23px;
+	height: 28px;
+	display: inline-block;
+	background-image: url(./images/global-sprite.png);
+	background-position: -145px -248px;
+	background-size: 240px auto;
+	/*position: absolute;
+	top: 4.5px;*/
+}
+label#icon-Flights {
+	position: relative;
+}
+i.icon-Hotels {
+	width: 24px;
+	height: 20px;
+	display: inline-block;
+	background-image: url(./images/global-sprite.png);
+	background-position: -176px -251px;
+	background-size: 240px auto;
+	/*position: absolute;
+	top: 4.5px;*/
+}
+i.icon-Trains {
+	width: 18px;
+	height: 28px;
+	display: inline-block;
+	background-image: url(./images/global-sprite.png);
+	background-position: -208px -248px;
+	background-size: 240px auto;
+	/*position: absolute;
+	top: 4.5px;*/
+}
+input.search_btn {
+	width: 180px;
+	height: 38px;
+	background-color: #FF9800;
+	border: 0 none;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #fff;
+	padding: 0 1em;
+}
+i.icon-switch {
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	background-image: url(./images/global-sprite.png);
+	background-position: -112px -272px;
+	background-size: 240px auto;
+	position: relative;
+	top: 36.5px;
+}
+

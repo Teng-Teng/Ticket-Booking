@@ -66,8 +66,8 @@
               </div>
             </li> 
             <li class="nav-item dropdown">
-              <a id="EN" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="EN"></i> EN
+              <a id="icon-EN" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="icon-EN"></i> EN
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Action</a>
@@ -81,7 +81,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <i class="App"></i> <span id="App">App</span> 
+                <i class="icon-App"></i> <span id="icon-App">App</span> 
               </a>
             </li>
             
@@ -93,27 +93,30 @@
     <main role="main">
       <div class="background-image">
         <div class="main-search">
-          <div class="btn-group btn-group-lg btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-primary active">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label id="icon-Flights" class="btn btn-primary active">
+              <i class="icon-Flights"></i>
               <input type="radio" name="options" id="option1" autocomplete="off" checked> Flights
             </label>
             <label class="btn btn-secondary">
+              <i class="icon-Hotels"></i>
               <input type="radio" name="options" id="option2" autocomplete="off"> Hotels
             </label>
             <label class="btn btn-secondary">
+              <i class="icon-Trains"></i>
               <input type="radio" name="options" id="option3" autocomplete="off"> Trains
             </label>
           </div>  
-          <br>
+          <br><br>
 
           <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-secondary">
+            <label class="btn btn-secondary btn-outline-light">
               <input type="radio" name="options" id="option1" autocomplete="off" checked> One way
             </label>
-            <label class="btn btn-primary active">
+            <label class="btn btn-primary btn-outline-light active">
               <input type="radio" name="options" id="option2" autocomplete="off"> Round trip
             </label>
-            <label class="btn btn-secondary">
+            <label class="btn btn-secondary btn-outline-light">
               <input type="radio" name="options" id="option3" autocomplete="off"> Multi-City
             </label>
           </div>
@@ -124,38 +127,66 @@
                 <label for="from">From</label>
                 <input type="text" class="form-control" id="from" placeholder="City of airport">
               </div>
+
+              <a href="#">
+                <i class="icon-switch"></i>
+              </a>
+              
               <div class="col">
                 <label for="to">To</label>
                 <input type="text" class="form-control" id="to" placeholder="City or airport">
               </div>
+                
             </div>
-
-            <label class="" for="J_DepDate">Depart</label>
-            <input id="J_DepDate" type="text" class="" value="" />
-
-            <label class="" for="J_EndDate">Return</label>
-            <input id="J_EndDate" type="text" class="" value="" />
-        
-            <label class="" for="adult">Adult(12+ yrs)</label>
-            <input id="adult" type="number" name="" min="0" max="10">
-
-            <label class="" for="child">Child(2-12 yrs)</label>
-            <input id="child" type="number" name="" min="0" max="10">
+            <br>
             
-            <label class="" for="select_class">Class</label>
-            <select id="select_class" class="custom-select">
-              <option value="Economy" selected>Economy</option>
-              <option value="Business">Business</option>
-              <option value="First Class">First Class</option>
-            </select>
+            <div class="row">
+              <div class="col-4">
+                <label class="" for="J_DepDate">Depart</label>
+                <input id="J_DepDate" type="text" class="form-control" value="" />
+              </div>
 
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck">
-              <label class="custom-control-label" for="customCheck">Nonstop only</label>
+              <div class="col-4">
+                <label class="" for="J_EndDate">Return</label>
+                <input id="J_EndDate" type="text" class="form-control" value="" />
+              </div>
+             
             </div>
+            
+            <div class="row">
+              <div class="col">
+                <label class="" for="adult">Adult(12+ yrs)</label>
+                <input id="adult" type="number" name="" min="0" max="10">
+              </div>
 
-            <input id="J_search_btn" type="submit" class="" value="Search flights" />
+              <div class="col">
+                <label class="" for="child">Child(2-12 yrs)</label>
+                <input id="child" type="number" name="" min="0" max="10">
+              </div>
 
+              <div class="col">
+                <label class="" for="select_class">Class</label>
+                <select id="select_class" class="custom-select">
+                  <option value="Economy" selected>Economy</option>
+                  <option value="Business">Business</option>
+                  <option value="First Class">First Class</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck">
+                  <label class="custom-control-label" for="customCheck">Nonstop only</label>
+                </div>
+              </div>
+            </div>
+              
+            
+           
+
+           
+
+            <input id="J_search_btn" type="submit" class="search_btn" value="Search flights" />
           </form>
           
         </div>
