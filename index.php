@@ -94,15 +94,15 @@
       <div class="background-image">
         <div class="main-search p-3">
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label id="icon-Flights" class="btn btn-primary active">
+            <label id="icon-Flights" class="btn btn-primary active btn-outline-primary">
               <i class="icon-Flights"></i>
               <input type="radio" name="options" id="option1" autocomplete="off" checked> Flights
             </label>
-            <label class="btn btn-secondary">
+            <label class="btn btn-secondary btn-outline-primary">
               <i class="icon-Hotels"></i>
               <input type="radio" name="options" id="option2" autocomplete="off"> Hotels
             </label>
-            <label class="btn btn-secondary">
+            <label class="btn btn-secondary btn-outline-primary">
               <i class="icon-Trains"></i>
               <input type="radio" name="options" id="option3" autocomplete="off"> Trains
             </label>
@@ -495,17 +495,47 @@
         </h3>
         
         <div class="hotel">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary btn-outline-success">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Paris
+            </label>
+            <label class="btn btn-success btn-outline-success active">
+              <input type="radio" name="options" id="option2" autocomplete="off"> New York
+            </label>
+            <label class="btn btn-secondary btn-outline-success">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Los Angeles
+            </label>
+            <label class="btn btn-secondary btn-outline-success">
+              <input type="radio" name="options" id="option4" autocomplete="off"> London
+            </label>
+            <label class="btn btn-secondary btn-outline-success">
+              <input type="radio" name="options" id="option5" autocomplete="off"> Shanghai
+            </label>
+            <label class="btn btn-secondary btn-outline-success">
+              <input type="radio" name="options" id="option6" autocomplete="off"> Hong Kong
+            </label>
+            <label class="btn btn-secondary btn-outline-success">
+              <input type="radio" name="options" id="option7" autocomplete="off"> Bangkok
+            </label>
+            <label class="btn btn-secondary btn-outline-success">
+              <input type="radio" name="options" id="option8" autocomplete="off"> Seoul
+            </label>
+          </div>
+        </div>
+          
+
+     <!--    <div class="hotel">
           <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary">Paris</button>
-            <button type="button" class="btn btn-light">New York</button>
-            <button type="button" class="btn btn-light">Los Angeles</button>
+            <button type="button" class="btn btn-primary ">Paris</button>
+            <button type="button" class="btn btn-light ">New York</button>
+            <button type="button" class="btn btn-light ">Los Angeles</button>
             <button type="button" class="btn btn-light">London</button>
             <button type="button" class="btn btn-light">Shanghai</button>
             <button type="button" class="btn btn-light">Hong Kong</button>
             <button type="button" class="btn btn-light">Bangkok</button>
             <button type="button" class="btn btn-light">Seoul</button>
           </div>
-        </div>
+        </div> -->
 
         <div class="row">
           <div class="col-md-4">
@@ -557,6 +587,7 @@
           </div>
 
         </div>
+      </div>
       
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
 
