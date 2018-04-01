@@ -2,9 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
-/*body {
-	color: #fff;
-}*/
+main {
+	border: 0 none;
+}
 nav {
 	border-bottom: 2px solid #1171B7;
 }
@@ -77,7 +77,6 @@ a.link {
 	border-bottom-right-radius: 2px;
 	background-color: #ffb000;
 	color: #fff;
-	
 }
 .triangle {
 	width: 0;
@@ -165,4 +164,5 @@ i.icon-switch {
 	position: relative;
 	top: 36.5px;
 }
+
 

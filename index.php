@@ -92,7 +92,7 @@
     
     <main role="main">
       <div class="background-image">
-        <div class="main-search">
+        <div class="main-search p-3">
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label id="icon-Flights" class="btn btn-primary active">
               <i class="icon-Flights"></i>
@@ -180,13 +180,9 @@
                 </div>
               </div>
             </div>
-              
             
-           
-
-           
-
-            <input id="J_search_btn" type="submit" class="search_btn" value="Search flights" />
+            <input style="cursor:pointer" id="J_search_btn" type="submit" class="search_btn" value="Search flights" />
+            
           </form>
           
         </div>
@@ -238,7 +234,7 @@
         </div>
       </div> 
 
-      <div class="banner">
+      <div class="banner my-2">
         <img class="img-fluid" src="./images/banner.png" alt="banner">
       </div>  
       
