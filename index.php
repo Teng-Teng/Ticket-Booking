@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Kaushan+Script" rel="stylesheet">
-    <link rel="stylesheet" href="./ticket.css">
+    <link rel="stylesheet" href="./css/ticket.css">
     <title>Ticket Booking</title>
   </head>
   <body>
@@ -189,7 +189,7 @@
 
         <div class="table-ticket">
           <?php 
-            require_once('database.php');
+            require_once('./PHP/database.php');
 
             $db = new Database();
             $all_tickets = $db->getAllTickets();
@@ -601,18 +601,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="./yui-min.js"></script>
+    <script src="./js/yui-min.js"></script>
 
     <script>
       YUI({
           modules: {
               'trip-calendar': {
-                  fullpath: 'trip-calendar.js',
+                  fullpath: './js/trip-calendar.js',
                   type    : 'js',
                   requires: ['trip-calendar-css']
               },
               'trip-calendar-css': {
-                  fullpath: 'trip-calendar.css',
+                  fullpath: './css/trip-calendar.css',
                   type    : 'css'
               }
           }
@@ -679,7 +679,7 @@
           var flightClass = $('#select_class').val();
 
           $.post(
-            "http://192.168.33.10/Ticket Booking/insert.php",
+            "http://192.168.33.10/Ticket Booking/PHP/insert.php",
             {
               "insert_from": from,
               "insert_to": to,
@@ -722,7 +722,7 @@
       function deleteTicket(id) {
         //ajax to connect backend
         $.post(
-          "http://192.168.33.10/Ticket Booking/delete.php",
+          "http://192.168.33.10/Ticket Booking/PHP/delete.php",
           {
             "delete_id": id
           },

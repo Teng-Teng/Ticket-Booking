@@ -9,7 +9,7 @@ nav {
 	border-bottom: 2px solid #1171B7;
 }
 .background-image {
-	background-image: url('./images/background.jpg');
+	background-image: url('../images/background.jpg');
 	background-size: cover;
 	background-position: top left;
 	border: 0.1px solid #fff;
@@ -89,7 +89,7 @@ i.icon-EN {
 	width: 30px;
 	height: 20px;
 	display: inline-block;
-	background-image: url(./images/global-sprite.png);
+	background-image: url('../images/global-sprite.png');
 	background-position: 0 -48px;
 	background-size: 240px auto;
 	position: relative;
@@ -103,7 +103,7 @@ i.icon-App {
 	width: 16px;
 	height: 26px;
 	display: inline-block;
-	background-image: url(./images/global-sprite.png);
+	background-image: url('../images/global-sprite.png');
 	background-position: -168px -120px;
 	background-size: 240px auto;
 }
@@ -115,7 +115,7 @@ i.icon-Flights {
 	width: 23px;
 	height: 28px;
 	display: inline-block;
-	background-image: url(./images/global-sprite.png);
+	background-image: url('../images/global-sprite.png');
 	background-position: -145px -248px;
 	background-size: 240px auto;
 	/*position: absolute;
@@ -128,7 +128,7 @@ i.icon-Hotels {
 	width: 24px;
 	height: 20px;
 	display: inline-block;
-	background-image: url(./images/global-sprite.png);
+	background-image: url('../images/global-sprite.png');
 	background-position: -176px -251px;
 	background-size: 240px auto;
 	/*position: absolute;
@@ -138,7 +138,7 @@ i.icon-Trains {
 	width: 18px;
 	height: 28px;
 	display: inline-block;
-	background-image: url(./images/global-sprite.png);
+	background-image: url('../images/global-sprite.png');
 	background-position: -208px -248px;
 	background-size: 240px auto;
 	/*position: absolute;
@@ -158,8 +158,10 @@ i.icon-switch {
 	width: 28px;
 	height: 28px;
 	display: inline-block;
-	background-image: url(./images/global-sprite.png);
+	background-image: url('../images/global-sprite.png');
 	background-position: -112px -272px;
+	/*background-image: url('../images/train-sprite.png');
+	background-position: -111px -96px;*/
 	background-size: 240px auto;
 	position: relative;
 	top: 36.5px;

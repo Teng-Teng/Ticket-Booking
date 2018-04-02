@@ -1,5 +1,5 @@
 <?php 
-require_once('database.php');
+require_once('./database.php');
 
 $delete_id = $_POST['delete_id'];
 

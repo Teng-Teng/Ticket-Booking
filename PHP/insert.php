@@ -1,5 +1,5 @@
 <?php 
-require_once('database.php');
+require_once('./database.php');
 
 $origin = $_POST['insert_from'];
 $destination = $_POST['insert_to'];
