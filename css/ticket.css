@@ -224,3 +224,36 @@ i.icon-star {
 	font-size: 22px;
 	font-weight: 700;
 }
+.hotels .card {
+	position: relative;
+}
+.overlay-label {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	position: absolute;
+	top: 231px;
+	padding: 6px 20px;
+	width: 100%;
+}
+.hotel-rank {
+	position: absolute;
+	left: 90%;
+	/*display: block;*/
+}
+i.crown {
+	position: absolute;
+	top: -36px;
+	left: -40px;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: block;
+	width: 60px;
+	height: 30px;
+	font-weight: 400;
+	border-radius: 60px 60px 0 0;
+}
+span.rank-num {
+	position: absolute;
+	left: -13px;
+}

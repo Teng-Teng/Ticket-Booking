@@ -593,7 +593,16 @@
         <div class="row hotels">
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-                <img class="card-img-top images" src="./images/1.jpg" alt="Card image cap">
+              <div class="overlay-label">
+                <span>
+                  Latest booking 46 hrs ago
+                </span>
+                <span class="hotel-rank">
+                  <i class="crown"></i>
+                  <span class="rank-num">1</span>
+                </span>
+              </div>
+              <img class="card-img-top images" src="./images/1.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Huatian Chinagora Hotel Paris</h5>
                 <div>
@@ -625,14 +634,14 @@
                 </div>
                 <p class="card-text">
                   <div class="hotel-review">
-                    <span class="hotel-score">4.5</span>
+                    <span class="hotel-score">4.2</span>
                     <span class="full-score">/5</span>
-                    <span class="review-num">(12 reviews)</span>
+                    <span class="review-num">(56 reviews)</span>
                   </div>
 
                    <div class="hotel-price">
                     <span class="price-currency">CAD</span>
-                    <span class="price-num">1,713</span>
+                    <span class="price-num">1,252</span>
                   </div>
                 </p>
               </div>
@@ -649,14 +658,14 @@
                 </div>
                 <p class="card-text">
                   <div class="hotel-review">
-                    <span class="hotel-score">4.5</span>
+                    <span class="hotel-score">4.4</span>
                     <span class="full-score">/5</span>
-                    <span class="review-num">(12 reviews)</span>
+                    <span class="review-num">(337 reviews)</span>
                   </div>
 
                    <div class="hotel-price">
                     <span class="price-currency">CAD</span>
-                    <span class="price-num">1,713</span>
+                    <span class="price-num">851</span>
                   </div>
                 </p>
               </div>
@@ -673,14 +682,14 @@
                 </div>
                 <p class="card-text">
                   <div class="hotel-review">
-                    <span class="hotel-score">4.5</span>
+                    <span class="hotel-score">4.3</span>
                     <span class="full-score">/5</span>
-                    <span class="review-num">(12 reviews)</span>
+                    <span class="review-num">(18 reviews)</span>
                   </div>
 
                    <div class="hotel-price">
                     <span class="price-currency">CAD</span>
-                    <span class="price-num">1,713</span>
+                    <span class="price-num">1,493</span>
                   </div>
                 </p>
               </div>
@@ -697,14 +706,14 @@
                 </div>
                 <p class="card-text">
                   <div class="hotel-review">
-                    <span class="hotel-score">4.5</span>
+                    <span class="hotel-score">4.6</span>
                     <span class="full-score">/5</span>
-                    <span class="review-num">(12 reviews)</span>
+                    <span class="review-num">(20 reviews)</span>
                   </div>
 
                    <div class="hotel-price">
                     <span class="price-currency">CAD</span>
-                    <span class="price-num">1,713</span>
+                    <span class="price-num">1,577</span>
                   </div>
                 </p>
               </div>
@@ -721,14 +730,14 @@
                 </div>
                 <p class="card-text">
                   <div class="hotel-review">
-                    <span class="hotel-score">4.5</span>
+                    <span class="hotel-score">4.1</span>
                     <span class="full-score">/5</span>
-                    <span class="review-num">(12 reviews)</span>
+                    <span class="review-num">(17 reviews)</span>
                   </div>
 
                    <div class="hotel-price">
                     <span class="price-currency">CAD</span>
-                    <span class="price-num">1,713</span>
+                    <span class="price-num">1,472</span>
                   </div>
                 </p>
               </div>
