@@ -76,8 +76,10 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Account</a>
+            <li id="icon-Account" class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="icon-Account mx-1"></i> <span class="Account mx-1">Account</span> 
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -447,8 +449,8 @@
               </div>
             </div>
 
-
           </div>
+
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span style="color: red" class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -537,7 +539,7 @@
           </div>
         </div> -->
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
                 <img class="card-img-top images" src="./images/1.png" alt="Card image cap">
@@ -586,7 +588,155 @@
             </div>
           </div>
 
+        </div> -->
+        
+        <div class="row hotels">
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Huatian Chinagora Hotel Paris</h5>
+                <div>
+                  <i class="icon-star"></i>
+                </div>
+                <p class="card-text">
+                  <div class="hotel-review">
+                    <span class="hotel-score">4.5</span>
+                    <span class="full-score">/5</span>
+                    <span class="review-num">(12 reviews)</span>
+                  </div>
+
+                   <div class="hotel-price">
+                    <span class="price-currency">CAD</span>
+                    <span class="price-num">1,713</span>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Champs Elysees Friedland</h5>
+                <div>
+                  <i class="icon-star"></i>
+                </div>
+                <p class="card-text">
+                  <div class="hotel-review">
+                    <span class="hotel-score">4.5</span>
+                    <span class="full-score">/5</span>
+                    <span class="review-num">(12 reviews)</span>
+                  </div>
+
+                   <div class="hotel-price">
+                    <span class="price-currency">CAD</span>
+                    <span class="price-num">1,713</span>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">The Bailey's Hotel London</h5>
+                <div>
+                  <i class="icon-star"></i>
+                </div>
+                <p class="card-text">
+                  <div class="hotel-review">
+                    <span class="hotel-score">4.5</span>
+                    <span class="full-score">/5</span>
+                    <span class="review-num">(12 reviews)</span>
+                  </div>
+
+                   <div class="hotel-price">
+                    <span class="price-currency">CAD</span>
+                    <span class="price-num">1,713</span>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lit BANGKOK Hotel</h5>
+                <div>
+                  <i class="icon-star"></i>
+                </div>
+                <p class="card-text">
+                  <div class="hotel-review">
+                    <span class="hotel-score">4.5</span>
+                    <span class="full-score">/5</span>
+                    <span class="review-num">(12 reviews)</span>
+                  </div>
+
+                   <div class="hotel-price">
+                    <span class="price-currency">CAD</span>
+                    <span class="price-num">1,713</span>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/5.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hotel Belleclaire</h5>
+                <div>
+                  <i class="icon-star"></i>
+                </div>
+                <p class="card-text">
+                  <div class="hotel-review">
+                    <span class="hotel-score">4.5</span>
+                    <span class="full-score">/5</span>
+                    <span class="review-num">(12 reviews)</span>
+                  </div>
+
+                   <div class="hotel-price">
+                    <span class="price-currency">CAD</span>
+                    <span class="price-num">1,713</span>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top images" src="./images/6.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hôtel California Champs Elysées Paris</h5>
+                <div>
+                  <i class="icon-star"></i>
+                </div>
+                <p class="card-text">
+                  <div class="hotel-review">
+                    <span class="hotel-score">4.5</span>
+                    <span class="full-score">/5</span>
+                    <span class="review-num">(12 reviews)</span>
+                  </div>
+
+                   <div class="hotel-price">
+                    <span class="price-currency">CAD</span>
+                    <span class="price-num">1,713</span>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
+
       </div>
       
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
@@ -714,8 +864,18 @@
             },
             "json"
           ); 
-
         });
+
+
+        $('.hotels .card').on({
+          mouseenter: function(){
+            $(this).addClass("border-primary");
+          },
+          mouseleave: function(){
+            $(this).removeClass("border-primary");
+          }
+        });
+
       });
 
 

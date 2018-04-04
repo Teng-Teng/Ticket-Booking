@@ -33,7 +33,7 @@ h5.card-title {
 	text-shadow: 4px 4px #eee;
 	font-family: 'Kaushan Script', cursive;
 	font-size: 1.5rem;
-	font-weight: 700;
+	font-weight: 400;
 }
 p.card-text {
 	font-family: 'Dancing Script', cursive;
@@ -166,5 +166,61 @@ i.icon-switch {
 	position: relative;
 	top: 36.5px;
 }
+i.icon-Account {
+	width: 23px;
+	height: 24px;
+	display: inline-block;
+	background-image: url('../images/global-sprite.png');
+	background-position: -183px -94px;
+	background-size: 240px auto;
+	position: relative;
+	top: 3px;
+}
+li#icon-Account a{
+	background-color: rgb(17, 113, 183);
+	border-radius: 30px;
+	position: relative;
+	top: 2px;
+	padding: 4px;
+}
+span.Account {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	position: relative;
+	top: -4px;
+	left: -3px;
+}
+.hotels {
+	cursor: pointer;
+}
+i.icon-star {
+	width: 64px;
+	height: 16px;
+	display: inline-block;
+	background-image: url('../images/global-sprite.png');
+	background-position: 0 -367px;
+	background-size: 240px auto;
+}
+.hotel-review {
+	float: left;
+	color: #828282;
+	font-size: 14px;
+	font-weight: 400;
+}
+.hotel-score {
+	font-size: 18px;
+}
+.hotel-price {
+	float: right;
+	font-size: 14px;
+	font-weight: 400;
+	color: #f60;
+}
+.price-currency {
 
-
+}
+.price-num {
+	font-size: 22px;
+	font-weight: 700;
+}
