@@ -255,5 +255,13 @@ i.crown {
 }
 span.rank-num {
 	position: absolute;
-	left: -13px;
+	top: -17px;
+	left: -17px;
+	font-size: 28px;
+}
+.hotel-rank img {
+	width: 42px;
+	position: absolute;
+	top: -30px;
+	left: -30px;
 }

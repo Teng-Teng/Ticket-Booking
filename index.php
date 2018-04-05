@@ -496,7 +496,7 @@
           Recommended Hotels
         </h3>
         
-        <div class="hotel">
+        <div class="hotel my-4">
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-secondary btn-outline-success">
               <input type="radio" name="options" id="option1" autocomplete="off" checked> Paris
@@ -599,6 +599,7 @@
                 </span>
                 <span class="hotel-rank">
                   <i class="crown"></i>
+                    <img src="./images/crown.png" alt="">
                   <span class="rank-num">1</span>
                 </span>
               </div>
@@ -626,7 +627,17 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-                <img class="card-img-top images" src="./images/2.jpg" alt="Card image cap">
+              <div class="overlay-label">
+                <span>
+                  Latest booking 46 hrs ago
+                </span>
+                <span class="hotel-rank">
+                  <i class="crown"></i>
+                  <img src="./images/crown.png" alt="">
+                  <span class="rank-num">2</span>
+                </span>
+              </div>
+              <img class="card-img-top images" src="./images/2.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Champs Elysees Friedland</h5>
                 <div>
@@ -650,7 +661,17 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-                <img class="card-img-top images" src="./images/3.jpg" alt="Card image cap">
+              <div class="overlay-label">
+                <span>
+                  Latest booking 46 hrs ago
+                </span>
+                <span class="hotel-rank">
+                  <i class="crown"></i>
+                  <img src="./images/crown.png" alt="">
+                  <span class="rank-num">3</span>
+                </span>
+              </div>
+              <img class="card-img-top images" src="./images/3.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">The Bailey's Hotel London</h5>
                 <div>
@@ -674,7 +695,17 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-                <img class="card-img-top images" src="./images/4.jpg" alt="Card image cap">
+              <div class="overlay-label">
+                <span>
+                  Latest booking 46 hrs ago
+                </span>
+                <span class="hotel-rank">
+                  <i class="crown"></i>
+                  <img src="./images/crown.png" alt="">
+                  <span class="rank-num">4</span>
+                </span>
+              </div>
+              <img class="card-img-top images" src="./images/4.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Lit BANGKOK Hotel</h5>
                 <div>
@@ -698,7 +729,17 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-                <img class="card-img-top images" src="./images/5.jpg" alt="Card image cap">
+              <div class="overlay-label">
+                <span>
+                  Latest booking 46 hrs ago
+                </span>
+                <span class="hotel-rank">
+                  <i class="crown"></i>
+                  <img src="./images/crown.png" alt="">
+                  <span class="rank-num">5</span>
+                </span>
+              </div>
+              <img class="card-img-top images" src="./images/5.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Hotel Belleclaire</h5>
                 <div>
@@ -722,9 +763,19 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-                <img class="card-img-top images" src="./images/6.jpg" alt="Card image cap">
+              <div class="overlay-label">
+                <span>
+                  Latest booking 46 hrs ago
+                </span>
+                <span class="hotel-rank">
+                  <i class="crown"></i>
+                  <img src="./images/crown.png" alt="">
+                  <span class="rank-num">6</span>
+                </span>
+              </div>
+              <img class="card-img-top images" src="./images/6.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Hôtel California Champs Elysées Paris</h5>
+                <h5 class="card-title">Hôtel California Elysées Paris</h5>
                 <div>
                   <i class="icon-star"></i>
                 </div>
