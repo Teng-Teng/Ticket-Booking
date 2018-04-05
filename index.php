@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Kaushan+Script" rel="stylesheet">
     <link rel="stylesheet" href="./css/ticket.css">
     <title>Ticket Booking</title>
@@ -125,16 +129,16 @@
 
           <form id="J_Search" target="_blank">
             <div class="row">
-              <div class="col">
-                <label for="from">From</label>
-                <input type="text" class="form-control" id="from" placeholder="City of airport">
+              <div class="col ui-widget">
+                <label for="tags">From</label>
+                <input type="text" class="form-control" id="tags" placeholder="City of airport">
               </div>
 
               <a href="#">
                 <i class="icon-switch"></i>
               </a>
               
-              <div class="col">
+              <div class="col ui-widget">
                 <label for="to">To</label>
                 <input type="text" class="form-control" id="to" placeholder="City or airport">
               </div>
@@ -775,6 +779,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <!-- jQuery UI JS     -->
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
     <script src="./js/yui-min.js"></script>
 
     <script>
@@ -844,7 +852,7 @@
       
       $(document).ready(function(){
         $('#J_search_btn').click(function(){
-          var from = $('#from').val();
+          var from = $('#tags').val();
           var to = $('#to').val();
           var departDate = $('#J_DepDate').val();
           var returnDate = $('#J_EndDate').val();
@@ -918,6 +926,38 @@
           "json"
         );
       }
+    </script>
+
+    <script>
+      $(function() {
+        var availableTags = [
+          "ActionScript",
+          "AppleScript",
+          "Asp",
+          "BASIC",
+          "C",
+          "C++",
+          "Clojure",
+          "COBOL",
+          "ColdFusion",
+          "Erlang",
+          "Fortran",
+          "Groovy",
+          "Haskell",
+          "Java",
+          "JavaScript",
+          "Lisp",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Scala",
+          "Scheme"
+        ];
+        $( "#tags" ).autocomplete({
+          source: availableTags
+        });
+      });
     </script>
   </body>
 </html>
