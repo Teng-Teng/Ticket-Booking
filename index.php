@@ -220,7 +220,7 @@
               <?php 
                 foreach($all_tickets as $key => $ticket) {
                   echo '<tr id="' . $ticket['id'] .'">';
-                  echo '<th scope="row">' . $ticket['id'] .'</th>';
+                  echo '<th scope="row">AC' . $ticket['id'] .'</th>';
                   echo  '<td>' . $ticket['Origin'] . '</td>';
                   echo  '<td>' . $ticket['Destination'] . '</td>';
                   echo  '<td>' . $ticket['DepartDate'] . '</td>';
@@ -228,16 +228,17 @@
                   echo  '<td>' . $ticket['Adult'] . '</td>';
                   echo  '<td>' . $ticket['Child'] . '</td>';
                   echo  '<td>' . $ticket['Class'] . '</td>';
-                  echo  '<td>' . '<button onclick="deleteTicket(\'' . $ticket['id'] . '\')">Delete</button>' . '</td>';
+                  echo  '<td>' . '<button class="btn btn-success" onclick="deleteTicket(\'' . $ticket['id'] . '\')">Delete</button>' . '</td>';
                   echo '</tr>';
                 }             
 
               ?>
             </tbody>
           </table>
-
-          <div class="info"></div>
+          
         </div>
+        <div class="info"></div>
+
       </div> 
 
       <div class="banner my-2">
@@ -765,13 +766,43 @@
 
         </div>
 
+        <div class="row footer-logo my-5">
+          <div class="col-2">
+            <a href="#" class="logo-pic">
+              <i class="iPhone"></i>
+            </a>
+          </div>
+
+          <div class="col-2">
+            <a href="#" class="logo-pic">
+              <i class="android"></i>
+            </a>
+          </div>
+
+          <div class="col-2">
+            <a href="#" class="facebook"></a>
+          </div>
+
+          <div class="col-2">
+            <a href="#" class="twitter"></a>
+          </div>
+
+          <div class="col-2">
+            <a href="#" class="youtube"></a>
+          </div>
+
+          <div class="col-2">
+            <a href="#" class="google"></a>
+          </div>
+
+        </div>
+
       </div>
       
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
 
     </main>
-          
-
+       
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -872,12 +903,12 @@
               "insert_flightClass": flightClass
             },
             function(data) {
-              if(data.message == 'Insert successfully') {
+              if(data.message == 'A new ticket has been added successfully!') {
 
                 var id = $('tbody').children("tr:last-child").attr('id');
                 id++;
                 var insert = '<tr id="' + id + '">'+
-                      '<th scope="row">' + id + '</th>' +
+                      '<th scope="row">AC' + id + '</th>' +
                       '<td>' + from + '</td>' +
                       '<td>' + to + '</td>' +
                       '<td>' + departDate + '</td>' +
@@ -885,7 +916,7 @@
                       '<td>' + adult + '</td>' +
                       '<td>' + child + '</td>' +
                       '<td>' + flightClass + '</td>' +
-                      '<td>' + '<button onclick="deleteTicket(\'' + id + '\')">Delete</button>' + '</td>' +
+                      '<td>' + '<button class="btn btn-success" onclick="deleteTicket(\'' + id + '\')">Delete</button>' + '</td>' +
                       '</tr>';
                 $('tbody').append(insert);
                 
@@ -931,28 +962,63 @@
     <script>
       $(function() {
         var availableTags = [
-          "ActionScript",
-          "AppleScript",
-          "Asp",
-          "BASIC",
-          "C",
-          "C++",
-          "Clojure",
-          "COBOL",
-          "ColdFusion",
-          "Erlang",
-          "Fortran",
-          "Groovy",
-          "Haskell",
-          "Java",
-          "JavaScript",
-          "Lisp",
-          "Perl",
-          "PHP",
-          "Python",
-          "Ruby",
-          "Scala",
-          "Scheme"
+          "Amsterdam(AMS) Netherlands",
+          "Auckland(AKL) New Zealand",
+          "Beijing(BJS) China",
+          "Bangkok(BKK) Thailand",
+          "Barcelona(BCN) Spain",
+          "Chengdu(CTU) China",
+          "Cebu(CEB) Philippines",
+          "Dubai(DXB) United Arab Emirates",
+          "Delhi(DEL) India",
+          "Edinburgh(EDI) United Kingdom",
+          "Entebbe(EBB) Uganda",
+          "Fukuoka(FUK) Japan",
+          "Frankfurt(FRA) Germany",
+          "Guam(GUM) United States",
+          "Geneva(GVA) Switzerland",
+          "Hong Kong(HKG) China",
+          "Hanoi(HAN) Vietnam",
+          "Istanbul(IST) Turkey",
+          "Islamabad(ISB) Pakistan",
+          "Jakarta(JKT) Insonesia",
+          "Jinan(TNA) China",
+          "Kingston(YGK) Canada",
+          "Kuala Lumpur(KUL) Malaysia",
+          "Kunming(KMG) China",
+          "Los Angeles(LAX) United States",
+          "London(LON) United Kingdom",
+          "Manila(MNL) Philippines",
+          "Macau(MFM) China",
+          "Montreal(YMQ) Canada",
+          "New York(NYC) United States",
+          "Ningbo(NGB) China",
+          "Ottawa(YOW) Canada",
+          "Orlando(ORL) United States",
+          "Paris Charles De Gaulle Airport(CDG) Paris",
+          "Phuket(HKT) Thailand",
+          "Queenstown(ZQN) New Zealand",
+          "Qingdao(TAO) China",
+          "Rome(ROM) Italy",
+          "Reykjavik(REK) Iceland",
+          "Singapore(SIN) Singapore",
+          "Sydney(SYD) Australia",
+          "Tokyo Haneda Airport(HND) Japan",
+          "Toronto Pearson International Airport(YYZ) Canada",
+          "Ulaanbaatar(ULN) Mongolia",
+          "Ulan Hot(HLH) China",
+          "Vancouver(YVR) Canada",
+          "Vientiane(VTE) Laos",
+          "Vienna(VIE) Austria",
+          "Wuhan(WUH) China",
+          "Wuxi(WUX) China",
+          "Xiamen(XMN) China",
+          "Xi'an(SIA) China",
+          "Yangon(RGN) Myanmar",
+          "Yiwu(YIW) China",
+          "Zurich(ZRH) Switzerland",
+          "Zhuhai(ZUH) China"
+          
         ];
         $( "#tags" ).autocomplete({
           source: availableTags

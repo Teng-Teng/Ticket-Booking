@@ -20,9 +20,9 @@ $affected_rows = $db->insertTicket($origin, $destination, $departDate, $returnDa
 
 
 if($affected_rows == 0) {
-	$str = 'Insert failed';
+	$str = 'There are some problem with adding your ticket, Please try again!';
 } else {
-	$str = 'Insert successfully';
+	$str = 'A new ticket has been added successfully!';
 }
 
 header("Access-Control-Allow-Origin: *");

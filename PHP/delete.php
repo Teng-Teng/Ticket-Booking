@@ -8,9 +8,9 @@ $db = new Database();
 $affected_rows = $db->deleteTicket($delete_id);
 
 if($affected_rows == 0) {
-	$str = 'Delete failed';
+	$str = 'Delete ticket failed!';
 } else {
-	$str = 'Delete successfully';
+	$str = 'A ticket has been deleted successfully!';
 }
 
 header("Access-Control-Allow-Origin: *");

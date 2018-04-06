@@ -37,6 +37,10 @@ nav {
 	height: 30%;
 	margin: 2rem 3rem;
 }
+div.info {
+	margin-bottom: 2rem;
+	margin-left: 3rem;
+}
 .main-search, .table-ticket {
 	background-color: rgba(0, 41, 64, 0.75);
 	color: #fff;
@@ -284,4 +288,47 @@ span.previous {
 }
 span.next {
 	left: 30px !important;
+}
+i.iPhone {
+	background-image: url(../images/iphone_android.jpg);
+	width: 138px;
+	height: 40px;
+	display: block;
+}
+i.android {
+	background-image: url(../images/iphone_android.jpg);
+	width: 145px;
+	height: 40px;
+	display: block;
+	background-position: 0 -40px;
+}
+.footer-logo .logo-pic:hover {
+    color: #2681ff;
+    box-shadow: inset 0 2px 3px #bdcedf;
+    border-color: #91a7c3;
+    border-top-color: rgb(145, 167, 195);
+    border-right-color: rgb(145, 167, 195);
+    border-bottom-color: rgb(145, 167, 195);
+    border-left-color: rgb(145, 167, 195);
+}
+.footer-logo .logo-pic {
+	display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    -webkit-transition: all 400ms ease-out;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+a.facebook {
+	transition: all ease 0.1s;
+	background-image: url(../images/global-sprite.png);
+    background-size: 240px auto;
+    background-position: 0 -152px;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+a.facebook:hover {
+	transform: translateY(-3px);
 }
