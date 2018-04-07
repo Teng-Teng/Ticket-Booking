@@ -289,6 +289,80 @@ span.previous {
 span.next {
 	left: 30px !important;
 }
+.app-download {
+	background-color: #019EE2;
+    background: linear-gradient(to right, #00BFE8 0, #2D64B3 100%);
+    color: #fff;
+}
+.inner {
+	width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 360px;
+}
+.app-phone {
+	background: url(../images/app-phone.png);
+	width: 409px;
+    height: 415px;
+    display: block;
+    position: absolute;
+    /*background: no-repeat 0 0;*/
+    bottom: 0;
+    left: 50px;
+}
+.app-content {
+	padding: 85px 0;
+    padding-left: 490px;
+    position: relative;
+}
+.txt {
+	float: left;
+    margin-bottom: 30px;
+}
+.desc {
+	font-size: 20px;
+}
+.qr-image {
+	float: left;
+}
+span.qr-code {
+	background-image: url(../images/WeChat-Image.jpg);
+	display: block;
+    width: 116px;
+    height: 116px;
+    margin-left: 20px;
+    position: relative;
+    top: -30px;
+}
+.download-btns {
+	clear: both;
+    margin-top: 20px;
+}
+.download-btns a {
+	color: #333;
+	display: inline-block;
+    width: 170px;
+    height: 50px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+}
+a.btn-appstore {
+	background-image: url(../images/app-download.png);
+	background-position: 0 0;
+}
+a.btn-googleplay {
+	background-image: url(../images/app-download.png);
+	background-position: 0 -100px;
+}
+a.btn-android {
+	background-image: url(../images/app-download.png);
+	background-position: 0 -200px;
+}
+
+
+
+
+
 i.iPhone {
 	background-image: url(../images/iphone_android.jpg);
 	width: 138px;

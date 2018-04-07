@@ -765,39 +765,62 @@
           </div>
 
         </div>
+        
+      </div>
 
-        <div class="row footer-logo my-5">
-          <div class="col-2">
-            <a href="#" class="logo-pic">
-              <i class="iPhone"></i>
-            </a>
+      <div class="app-download my-5">
+        <div class="inner">
+          <div class="app-phone"></div>
+          <div class="app-content">
+            <div class="txt">
+              <p class="desc">
+                Save up to 50% With the Free Trip.com App！
+              </p>
+            </div>
+            <div class="qr-image">
+              <span class="qr-code"></span>
+            </div>
+            <div class="download-btns">
+              <a href="#" class="btn-appstore"></a>
+              <a href="#" class="btn-googleplay"></a>
+              <a href="#" class="btn-android"></a>
+            </div>
           </div>
+        </div>
+      </div>
+      
+      
 
-          <div class="col-2">
-            <a href="#" class="logo-pic">
-              <i class="android"></i>
-            </a>
-          </div>
-
-          <div class="col-2">
-            <a href="#" class="facebook"></a>
-          </div>
-
-          <div class="col-2">
-            <a href="#" class="twitter"></a>
-          </div>
-
-          <div class="col-2">
-            <a href="#" class="youtube"></a>
-          </div>
-
-          <div class="col-2">
-            <a href="#" class="google"></a>
-          </div>
-
+      <!-- <div class="row footer-logo my-5">
+        <div class="col-2">
+          <a href="#" class="logo-pic">
+            <i class="iPhone"></i>
+          </a>
         </div>
 
-      </div>
+        <div class="col-2">
+          <a href="#" class="logo-pic">
+            <i class="android"></i>
+          </a>
+        </div>
+
+        <div class="col-2">
+          <a href="#" class="facebook"></a>
+        </div>
+
+        <div class="col-2">
+          <a href="#" class="twitter"></a>
+        </div>
+
+        <div class="col-2">
+          <a href="#" class="youtube"></a>
+        </div>
+
+        <div class="col-2">
+          <a href="#" class="google"></a>
+        </div>
+
+      </div> -->
       
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
 
@@ -964,6 +987,7 @@
         var availableTags = [
           "Amsterdam(AMS) Netherlands",
           "Auckland(AKL) New Zealand",
+          "Berlin(BER) Germany",
           "Beijing(BJS) China",
           "Bangkok(BKK) Thailand",
           "Barcelona(BCN) Spain",
