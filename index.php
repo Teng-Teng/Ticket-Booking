@@ -789,7 +789,22 @@
         </div>
       </div>
       
-      
+      <div class="ft-channel">
+        <div class="ft-app">
+          <a href="#" class="ft-appstore">
+            <i></i>
+          </a>
+          <a href="#" class="ft-googleplay">
+            <i></i>
+          </a>
+        </div>
+        <div class="ft-media">
+          <a href="#" class="icon-facebook"></a>
+          <a href="#" class="icon-twitter"></a>
+          <a href="#" class="icon-youtube"></a>
+          <a href="#" class="icon-google"></a>
+        </div>
+      </div>
 
       <!-- <div class="row footer-logo my-5">
         <div class="col-2">
