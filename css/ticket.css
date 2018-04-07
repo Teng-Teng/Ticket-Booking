@@ -65,6 +65,11 @@ h3.top-deal {
 .subscribe {
 	height: 5rem;
 	background-color: #F0F8FF;
+	position: relative;
+}
+.email-box {
+	position: absolute;
+	top: 21px;
 }
 .card:hover {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -130,8 +135,8 @@ i.icon-Flights {
 	background-image: url('../images/global-sprite.png');
 	background-position: -145px -248px;
 	background-size: 240px auto;
-	/*position: absolute;
-	top: 4.5px;*/
+	position: relative;
+	top: 10px;
 }
 /*label#icon-Flights {
 	position: relative;
@@ -143,8 +148,8 @@ i.icon-Hotels {
 	background-image: url('../images/global-sprite.png');
 	background-position: -176px -251px;
 	background-size: 240px auto;
-	/*position: absolute;
-	top: 4.5px;*/
+	position: relative;
+	top: 6px;
 }
 i.icon-Trains {
 	width: 18px;
@@ -153,18 +158,21 @@ i.icon-Trains {
 	background-image: url('../images/global-sprite.png');
 	background-position: -208px -248px;
 	background-size: 240px auto;
-	/*position: absolute;
-	top: 4.5px;*/
+	position: relative;
+	top: 10px;
 }
 input.search_btn {
 	width: 180px;
 	height: 38px;
-	background-color: #FF9800;
+	background-color: #ffb000;;
 	border: 0 none;
 	border-radius: 4px;
 	font-size: 16px;
 	color: #fff;
 	padding: 0 1em;
+}
+input.search_btn:hover {
+	background-color: #ffc600
 }
 i.icon-switch {
 	width: 28px;
@@ -294,7 +302,7 @@ span.next {
     background: linear-gradient(to right, #00BFE8 0, #2D64B3 100%);
     color: #fff;
 }
-.inner {
+.app-inner {
 	width: 1180px;
     margin: 0 auto;
     position: relative;
@@ -435,50 +443,21 @@ a.btn-android {
 .icon-google {
     background-position: -48px -200px;    
 }
+.calendar-bounding-box {
+	width: 296px !important;
+}
+/*.calendar-input-wrap span {
+    background: url(../images/calendar-endicon.png) 
+    -999px -999px no-repeat;
+}*/
+.carousel-control-prev-icon {
+	position: absolute;
+	left: -47px;
+}
+.carousel-control-next-icon {
+	position: absolute;
+	left: 173px;
+}
 
 
 
-
-i.iPhone {
-	background-image: url(../images/iphone_android.jpg);
-	width: 138px;
-	height: 40px;
-	display: block;
-}
-i.android {
-	background-image: url(../images/iphone_android.jpg);
-	width: 145px;
-	height: 40px;
-	display: block;
-	background-position: 0 -40px;
-}
-.footer-logo .logo-pic:hover {
-    color: #2681ff;
-    box-shadow: inset 0 2px 3px #bdcedf;
-    border-color: #91a7c3;
-    border-top-color: rgb(145, 167, 195);
-    border-right-color: rgb(145, 167, 195);
-    border-bottom-color: rgb(145, 167, 195);
-    border-left-color: rgb(145, 167, 195);
-}
-.footer-logo .logo-pic {
-	display: inline-block;
-    padding: 10px 15px;
-    border: 1px solid #dedede;
-    border-radius: 6px;
-    -webkit-transition: all 400ms ease-out;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-a.facebook {
-	transition: all ease 0.1s;
-	background-image: url(../images/global-sprite.png);
-    background-size: 240px auto;
-    background-position: 0 -152px;
-    width: 45px;
-    height: 45px;
-    display: inline-block;
-}
-a.facebook:hover {
-	transform: translateY(-3px);
-}

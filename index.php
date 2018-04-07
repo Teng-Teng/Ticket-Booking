@@ -14,6 +14,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Kaushan+Script" rel="stylesheet">
     <link rel="stylesheet" href="./css/ticket.css">
+
     <title>Ticket Booking</title>
   </head>
   <body>
@@ -238,7 +239,6 @@
           
         </div>
         <div class="info"></div>
-
       </div> 
 
       <div class="banner my-2">
@@ -433,8 +433,8 @@
 
       <div class="container-fluid">
         <div class="subscribe ml-4">
-          <div class="row">
-            <div class="col-2">
+          <div class="row email-box">
+            <div class="col-3">
               Get great deals delivered to your inbox！ 
             </div>
 
@@ -763,13 +763,11 @@
               </div>
             </div>
           </div>
-
         </div>
-        
       </div>
 
       <div class="app-download my-5">
-        <div class="inner">
+        <div class="app-inner">
           <div class="app-phone"></div>
           <div class="app-content">
             <div class="txt">
@@ -837,7 +835,7 @@
 
       </div> -->
       
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+      <br><br><br><br><br><br>
 
     </main>
        
